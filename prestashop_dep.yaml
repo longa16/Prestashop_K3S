@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prestashop-dep
+  labels:
+    app: prestashop
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: prestashop
+  template:
+    metadata:
+      name: prestashop
+      labels:
+        app: prestashop
+    spec:
+      containers:
+        - name: prestashop
+          image: bitnami/prestashop:latest
+          envFrom:
+            - secretRef:
+                name: prestashop-secret
+          ports:
+          - containerPort: 80
+          volumeMounts:
+            - mountPath: prestashop-pvc
+              name: /bitnami/prestashop
+      volumes:
+        - name: prestashop-pvc
+          persistentVolumeClaim:
+            claimName: prestashop-pvc
+
+
+      
