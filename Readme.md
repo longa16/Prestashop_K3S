@@ -12,6 +12,7 @@ with a mariadb database using kubernetes.
 create a kubernetes cluster for our deployment with 
 03 nodes including a master and 02 workers 
 
+K3s official documentation link:
 ``` text 
 https://docs.k3s.io/quick-start
 ```
