@@ -1,4 +1,4 @@
-# Prestashop_K3S
+# 🛒 Prestashop_K3S
 
 the goal of this project is to deploy a prestashop docker image 
 with a mariadb database using kubernetes.
