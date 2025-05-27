@@ -3,11 +3,19 @@
 the goal of this project is to deploy a prestashop docker image 
 with a mariadb database using kubernetes.
 
-## our deployment structure
+## 🏗️ Deployment Structure
+
+This setup includes:
+- PrestaShop container
+- MariaDB container
+- Persistent volumes
+- Services and ingress
+- All deployed via Kubernetes
+
 
 ![deployment structure](presta.png "structure")
 
-## to go further
+## 🚀 Going Further – Full Kubernetes Cluster with K3s
 
 create a kubernetes cluster for our deployment with 
 03 nodes including a master and 02 workers 
