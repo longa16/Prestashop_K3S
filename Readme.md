@@ -1,9 +1,9 @@
-# 🛒 Prestashop_K3S
+# Prestashop_K3S
 
 the goal of this project is to deploy a prestashop docker image 
 with a mariadb database using kubernetes.
 
-## 🏗️ Deployment Structure
+## Deployment Structure
 
 This setup includes:
 - PrestaShop container
@@ -15,7 +15,7 @@ This setup includes:
 
 ![deployment structure](presta.png "structure")
 
-## 🚀 Going Further – Full Kubernetes Cluster with K3s
+## Going Further – Full Kubernetes Cluster with K3s
 
 create a kubernetes cluster for our deployment with 
 03 nodes including a master and 02 workers 
